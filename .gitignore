@@ -1,0 +1,96 @@
+# =========================
+# ROS 2 / colcon
+# =========================
+build/
+install/
+log/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+
+# Type checking / lint caches
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# =========================
+# C / C++
+# =========================
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dll
+*.dylib
+
+*.exe
+*.out
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# =========================
+# ROS generated / runtime
+# =========================
+*.bag
+*.bag.active
+*.db3
+*.db3-shm
+*.db3-wal
+
+# rosbag2 folders
+rosbag2_*/
+
+# =========================
+# IDE / editors
+# =========================
+.vscode/
+.idea/
+
+*.swp
+*.swo
+*~
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Misc
+# =========================
+*.log
+*.tmp
+*.bak
