@@ -24,7 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'simple_node = ros_introduction.simple_node:main'
+            'simple_node = ros_introduction.simple_node:main',
+	    'temp_publisher = ros_introduction.temperature_publisher:main'
         ],
     },
 )
