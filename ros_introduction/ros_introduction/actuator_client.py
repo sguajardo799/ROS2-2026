@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import sys
 
 import rclpy
@@ -12,8 +10,8 @@ class ActuatorClient(Node):
     Cliente del servicio /actuator/enable.
 
     Uso:
-        ros2 run example_nodes_jazzy actuator_client true
-        ros2 run example_nodes_jazzy actuator_client false
+        ros2 run ros_introduction actuator_client true
+        ros2 run ros_introduction actuator_client false
     """
 
     def __init__(self):
@@ -41,7 +39,7 @@ def main(args=None):
 
     if len(sys.argv) != 2 or sys.argv[1].lower() not in ('true', 'false'):
         print(
-            'Uso: ros2 run example_nodes_jazzy actuator_client [true|false]'
+            'Uso: ros2 run ros_introduction actuator_client [true|false]'
         )
         rclpy.shutdown()
         return
