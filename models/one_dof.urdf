@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="one-dof">
+	<link name="base_link">
+		<visual>
+			<origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+			<geometry>
+				<box size="0.2 0.2 0.1"/>
+			</geometry>
+			<material name="amarillo">
+				<color rgba="0.7 0.7 0.1 0.5"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+			<geometry>
+				<box size="0.2 0.2 0.1"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="brazo">
+		<visual>
+			<origin xyz="0.0 0.0 0.2" rpi="0.0 0.0 0.0"/>
+			<geometry>
+				<cylinder radius="0.05" length="0.4"/>
+			</geometry>
+			<material name="rojo">
+				<color rgba="0.9 0.1 0.1 0.8"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0 0.0 0.2" rpi="0.0 0.0 0.0"/>
+			<geometry>
+				<cylinder radius="0.05" length="0.4"/>
+			</geometry>
+		</collision>
+	</link>
+	<joint name="joint_base_brazo" type="revolute">
+		<parent link="base_link"/>
+		<child link="brazo"/>
+		<origin xyz="0.0 0.0 0.05" rpy="0.0 0.0 0.0"/>
+		<axis xyz="0.0 -1 0.0"/>
+		<limit lower="-1.5" upper="1.5" effort="100" velocity="100"/>
+	</joint>
+</robot>

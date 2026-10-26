@@ -26,7 +26,9 @@ setup(
         'console_scripts': [
             'simple_node = ros_introduction.simple_node:main',
 	        'temp_publisher = ros_introduction.temperature_publisher:main',
-            'temp_subscriber = ros_introduction.temperature_subscriber:main'
+            'temp_subscriber = ros_introduction.temperature_subscriber:main',
+            'actuator_service = ros_introduction.actuator_service:main',
+            'actuator_client = ros_introduction.actuator_client:main',
         ],
     },
 )
