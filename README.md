@@ -3,3 +3,5 @@
 # Organización:
 + ros_introduction: Nodos de ejemplo para explicación de concepto de nodos, tópicos y servicios
 + models: Modelos URDFs vistos en clase para introducción a uso de robot_state_publisher, joint_state_publisher, rviz y Gazebo.
++ gazebo_introduction: Simulación de un robot diferencial en Gazebo (Harmonic) con cámara y cámara de profundidad.
++ micro_ros_labs: 3 laboratorios (Arduino/ESP32) de control de velocidad FF+PI de motores con encoder e integración con ROS 2 mediante micro-ROS.
