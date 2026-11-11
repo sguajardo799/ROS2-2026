@@ -104,10 +104,14 @@ Los tópicos `/camera/*` solo tienen datos al usar `diff_robot_camera.urdf`, y l
 
 ### Compilar
 
+Asegurar tener disponible ROS2 en terminal:
+```bash
+source /opt/ros/jazzy/setup.bash
+```
+
 Desde la raíz del workspace:
 
 ```bash
-source /opt/ros/jazzy/setup.bash
 colcon build --packages-select gazebo_introduction
 source install/setup.bash
 ```
