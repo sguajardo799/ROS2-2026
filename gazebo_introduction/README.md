@@ -102,6 +102,13 @@ Los tópicos `/camera/*` solo tienen datos al usar `diff_robot_camera.urdf`, y l
 
 ## Uso
 
+### Dependencias
+```bash
+sudo apt update
+sudo apt install ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui ros-jazzy-xacro ros-jazzy-teleop-twist-keyboard ros-jazzy-ros-gz 
+```
+
+
 ### Compilar
 
 Asegurar tener disponible ROS2 en terminal:
